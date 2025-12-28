@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация ImperialGram</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ImperGram/ImperGram/refs/heads/master/ic_launcher-playstore.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        :root {
+            --bg: #0f0f0f;
+            --text: #e0e0e0;
+            --text-secondary: #aaaaaa;
+            --accent: #bbbbbb;
+            --card-bg: #1e1e1e;
+            --border: #333333;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #f5f5f5;
+                --text: #212121;
+                --text-secondary: #666666;
+                --accent: #444444;
+                --card-bg: #ffffff;
+                --border: #dddddd;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 100px 20px 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(30,30,30,0.8), transparent);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            margin-bottom: 20px;
+            transition: transform 0.4s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.3em;
+            color: var(--text-secondary);
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 100px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        section:nth-child(1) { animation-delay: 0.2s; }
+        section:nth-child(2) { animation-delay: 0.4s; }
+        section:nth-child(3) { animation-delay: 0.6s; }
+        section:nth-child(4) { animation-delay: 0.8s; }
+        section:nth-child(5) { animation-delay: 1.0s; }
+
+        h2 {
+            font-size: 2.4em;
+            margin-bottom: 30px;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .content {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        .placeholder {
+            text-align: center;
+            font-size: 1.2em;
+            color: var(--text-secondary);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            border-left: 4px solid var(--accent);
+        }
+
+        footer {
+            padding: 60px 20px 40px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border);
+            margin-top: 80px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/ImperGram/ImperGram/refs/heads/master/ic_launcher-playstore.png" alt="ImperialGram Logo" class="logo">
+        <h1>Документация ImperialGram</h1>
+        <p>Полное руководство по настройке и использованию клиента</p>
+    </header>
+
+    <nav>
+        <a href="#plugins">Плагины</a>
+        <a href="#main">Главные</a>
+        <a href="#other">Другие</a>
+        <a href="#donate">Донат</a>
+        <a href="#appearance">Внешний вид</a>
+    </nav>
+
+    <main>
+        <section id="plugins">
+            <h2>Плагины</h2>
+            <div class="content">
+                <div class="placeholder">
+                    <p><strong>Раздел в разработке</strong></p>
+                    <p>Здесь будет подробное описание системы плагинов ImperialGram: как устанавливать, какие плагины доступны, управление и создание собственных.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="main">
+            <h2>Главные особенности</h2>
+            <div class="content">
+                <div class="placeholder">
+                    <p><strong>Раздел в разработке</strong></p>
+                    <p>Здесь будут описаны ключевые уникальные функции ImperialGram.</p>
+                    <ul>
+                        <li>Расширенные настройки интерфейса и поведения</li>
+                        <li>Оптимизации производительности</li>
+                        <li>Дополнительные инструменты приватности</li>
+                        <li>Улучшенная работа с медиа и чатами</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="other">
+            <h2>Другие функции</h2>
+            <div class="content">
+                <div class="placeholder">
+                    <p><strong>Раздел в разработке</strong></p>
+                    <p>Сюда войдут все второстепенные, но полезные модификации и экспериментальные возможности клиента.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate">
+            <h2>Поддержать проект (Донат)</h2>
+            <div class="content">
+                <div class="placeholder">
+                    <p><strong>Раздел в разработке</strong></p>
+                    <p>Спасибо, что интересуетесь поддержкой проекта!</p>
+                    <p>Ссылки на донаты (Boosty, криптовалюта и другие способы) появятся здесь позже.</p>
+                    <p>Пока следите за новостями в официальном канале: <a href="https://t.me/ImperialGram" target="_blank">@ImperialGram</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appearance">
+            <h2>Внешний вид и кастомизация</h2>
+            <div class="content">
+                <div class="placeholder">
+                    <p><strong>Раздел в разработке</strong></p>
+                    <p>Полное руководство по настройке тем, иконок, шрифтов, цветов, Material You и других возможностей изменения внешнего вида ImperialGram.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ImperialGram. Open-source форк Telegram.</p>
+        <p>Канал: <a href="https://t.me/ImperialGram" target="_blank">t.me/ImperialGram</a> | 
+           GitHub: <a href="https://github.com/ImperGram/ImperGram" target="_blank">ImperGram/ImperGram</a></p>
+    </footer>
+</body>
+</html>
